@@ -1,0 +1,12 @@
+Started on Mar 18, 2020 8:22:20 AM
+Started by event from 140.82.115.248 ⇒ http://jenkins.irap.cf/github-webhook/ on Wed Mar 18 08:22:20 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision e31ebadf0f51f12ef69090086dd548e8ddd0700c (refs/remotes/origin/master)
+using credential fab16a6d-7a4f-4333-964e-8a4382d5e763
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git ls-remote -h -- https://github.com/sarathkgit/staticwebsite-onepage.git # timeout=10
+Found 2 remote heads on https://github.com/sarathkgit/staticwebsite-onepage.git
+[poll] Latest remote head revision on refs/heads/master is: 4973c61ec8719b6bcd499a132e4609c7c1a6ad1e
+Done. Took 0.12 sec
+Changes found

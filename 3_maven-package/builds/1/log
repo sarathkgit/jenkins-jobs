@@ -1,0 +1,17 @@
+Started by upstream project "[8mha:////4EvEc+euIY3z2N+NrDyz5Eq0h7zKO4xeS1yxHlSL8qJGAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+kbxuYllqXm6JanFJfoAZnblGMcAAAA=[0m2_maven-test" build number [8mha:////4GDQ3ihq5O5zyWTPN9nVM5I674dWJUlRJfqlz1XG3fSsAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBmH9rPwkfaP43MSy1DzdktTiEn1DAIv95NnIAAAA[0m1
+originally caused by:
+ Started by upstream project "[8mha:////4G53WOjTnj1kYHIWnXxKAokNobgxjOY+KM670/mzbqHkAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/az8JH3D+KTSzJwUfQDt7yx1wgAAAA==[0m1_build" build number [8mha:////4O96mN4zm3ifNC4YFFmvHmstaAyg6u/AqYt/siVERv+mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBj79rPwkfcP4pNLMnBR9QwBhixNCwwAAAA==[0m1
+ originally caused by:
+  Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/3_maven-package
+[3_maven-package] $ /bin/sh -xe /tmp/jenkins2597200557756814155.sh
++ echo '####### this is maven packaging job #######'
+####### this is maven packaging job #######
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Triggering a new build of [8mha:////4IGnWpIb/gA+s3I023zGhUG/EfvlwwNnWPRjUHk3uPy3AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYR/az8JH2T+NzEstQ83ZTUgpz8Sn0AQeSBVskAAAA=[0m4_maven-deploy
+Finished: SUCCESS

@@ -1,0 +1,70 @@
+Started by upstream project "[8mha:////4EQirWmKF4Cy86Yu/oW0ZHS1I3R3FlhCbI5mk5cvt2J0AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JH3D+OT80ryS1CLdpNLMnBR9AAxKdULKAAAA[0m1_counter-build" build number [8mha:////4PZHRO48ZSYPF90Rgv2UPWRJU7mYaG+z3pO36ucpwTcXAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwkfcP45PzSvJLUIt2k0sycFH1jAMp+NHjLAAAA[0m3
+originally caused by:
+ Started by an SCM change
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Mi5nkxhE2VXw8qyjGWNH7VLwqDmNPRrqUyNVyfdx0GdAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eKcxLJUAEnZB8bEAAAA[0mslave (slave-1) in workspace /home/jenkins/workspace/2_counter-test
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+using credential fab16a6d-7a4f-4333-964e-8a4382d5e763
+Cloning the remote Git repository
+Cloning repository https://github.com/sarathkgit/Maven-CounterWebApp.git
+ > git init /home/jenkins/workspace/2_counter-test # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/Maven-CounterWebApp.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/Maven-CounterWebApp.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/Maven-CounterWebApp.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/Maven-CounterWebApp.git # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/Maven-CounterWebApp.git
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/Maven-CounterWebApp.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d8d768f4f542a6a8b1bbb7d77abf0b977f4c9c2f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d8d768f4f542a6a8b1bbb7d77abf0b977f4c9c2f # timeout=10
+Commit message: "Merge pull request #2 from sarathkgit/dev"
+ > git rev-list --no-walk 44557acdaf671c028ad1466cbda00b2b346207cb # timeout=10
+[2_counter-test] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/MAVEN_VERSION-3.6.2/bin/mvn clean test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mkyong:CounterWebApp >----------------------
+[INFO] Building CounterWebApp Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4PRLbbxp59Vs5gBn4eGEGzRL/dWLitGYdHRA3k5rmXNMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ CounterWebApp ---
+[INFO] Deleting /home/jenkins/workspace/2_counter-test/target
+[INFO] 
+[8mha:////4PRLbbxp59Vs5gBn4eGEGzRL/dWLitGYdHRA3k5rmXNMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ CounterWebApp ---
+[8mha:////4EEy/+HlS3G4LqvWyHOQ2jNkphXt/G47Z4NLBPNvN99GAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4PRLbbxp59Vs5gBn4eGEGzRL/dWLitGYdHRA3k5rmXNMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ CounterWebApp ---
+[8mha:////4EEy/+HlS3G4LqvWyHOQ2jNkphXt/G47Z4NLBPNvN99GAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /home/jenkins/workspace/2_counter-test/target/classes
+[INFO] 
+[8mha:////4PRLbbxp59Vs5gBn4eGEGzRL/dWLitGYdHRA3k5rmXNMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ CounterWebApp ---
+[8mha:////4EEy/+HlS3G4LqvWyHOQ2jNkphXt/G47Z4NLBPNvN99GAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/2_counter-test/src/test/resources
+[INFO] 
+[8mha:////4PRLbbxp59Vs5gBn4eGEGzRL/dWLitGYdHRA3k5rmXNMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ CounterWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4PRLbbxp59Vs5gBn4eGEGzRL/dWLitGYdHRA3k5rmXNMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ CounterWebApp ---
+[INFO] No tests to run.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.798 s
+[INFO] Finished at: 2020-03-20T12:03:29Z
+[INFO] ------------------------------------------------------------------------
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Published SNS notification: subject=counter web app test using junit report msg from Jenkins topic=arn:aws:sns:us-east-1:840389044523:My-SNS
+Triggering a new build of [8mha:////4F4dF+o73X2qerzR5QVxpLFsENXVcv8teC0Pan+5YpGEAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZx/az8JH3j+OT80ryS1CLdgsTk7MT0VH0AkM+dw8wAAAA=[0m3_counter-package
+Finished: SUCCESS

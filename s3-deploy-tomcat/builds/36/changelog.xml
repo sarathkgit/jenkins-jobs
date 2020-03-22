@@ -1,0 +1,9 @@
+commit 0aec3b356fcbbc8e317838aca0d9cd880b5d12c5
+tree 0b9d1d67e425b526fbb5ab50200248442465be39
+parent 7ab6ad4a97ece82f2266186c083c4cc5fb0512ff
+author sarathkgit <39150187+sarathkgit@users.noreply.github.com> 2020-03-22 19:33:25 +0530
+committer GitHub <noreply@github.com> 2020-03-22 19:33:25 +0530
+
+    deleted become sudo user
+
+:100644 100644 96fe2bd64708a34e3bfb2090b5981644b4efae70 721fc76a8164872e58e185bb29a667244f8abc4f M	playbooks/copyartifact.yml

@@ -1,0 +1,68 @@
+Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Mi5nkxhE2VXw8qyjGWNH7VLwqDmNPRrqUyNVyfdx0GdAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eKcxLJUAEnZB8bEAAAA[0mslave (slave-1) in workspace /home/jenkins/workspace/s3-deploy-tomcat
+using credential fab16a6d-7a4f-4333-964e-8a4382d5e763
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sarathkgit/ansible-ks.git # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/ansible-ks.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/ansible-ks.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7ab6ad4a97ece82f2266186c083c4cc5fb0512ff (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7ab6ad4a97ece82f2266186c083c4cc5fb0512ff # timeout=10
+Commit message: "adding become method"
+ > git rev-list --no-walk 7ab6ad4a97ece82f2266186c083c4cc5fb0512ff # timeout=10
+[s3-deploy-tomcat] $ /bin/sh -xe /tmp/jenkins3235433207278323721.sh
++ sudo echo '######### using aws s3 cli comand copy the war file to tomcat ########3'
+######### using aws s3 cli comand copy the war file to tomcat ########3
++ aws s3 ls s3://artifact-s3-irap/gameoflife-web/target
+                           PRE target/
++ aws s3 cp s3://artifact-s3-irap/gameoflife-web/target/gameoflife.war /home/jenkins/workspace/s3-deploy-tomcat
+Completed 256.0 KiB/3.0 MiB (2.6 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/3.0 MiB (5.0 MiB/s) with 1 file(s) remainingCompleted 768.0 KiB/3.0 MiB (7.1 MiB/s) with 1 file(s) remainingCompleted 1.0 MiB/3.0 MiB (9.2 MiB/s) with 1 file(s) remaining  Completed 1.2 MiB/3.0 MiB (11.2 MiB/s) with 1 file(s) remaining Completed 1.5 MiB/3.0 MiB (13.1 MiB/s) with 1 file(s) remaining Completed 1.8 MiB/3.0 MiB (14.9 MiB/s) with 1 file(s) remaining Completed 2.0 MiB/3.0 MiB (16.7 MiB/s) with 1 file(s) remaining Completed 2.2 MiB/3.0 MiB (13.4 MiB/s) with 1 file(s) remaining Completed 2.5 MiB/3.0 MiB (14.7 MiB/s) with 1 file(s) remaining Completed 2.8 MiB/3.0 MiB (15.9 MiB/s) with 1 file(s) remaining Completed 3.0 MiB/3.0 MiB (17.1 MiB/s) with 1 file(s) remaining Completed 3.0 MiB/3.0 MiB (17.3 MiB/s) with 1 file(s) remaining download: s3://artifact-s3-irap/gameoflife-web/target/gameoflife.war to ./gameoflife.war
++ pwd
+/home/jenkins/workspace/s3-deploy-tomcat
++ ls -rlt
+total 3156
+-rw-rw-r-- 1 jenkins jenkins 3192497 Mar 21 16:36 gameoflife.war
+-rwxrwxr-x 1 jenkins jenkins    1016 Mar 21 18:36 hosts-ORG
+-rwxrwxr-x 1 jenkins jenkins   19985 Mar 21 18:36 ansible.cfg
+drwxrwxr-x 2 jenkins jenkins      22 Mar 21 18:36 srv
+-rw-rw-r-- 1 jenkins jenkins      27 Mar 21 18:36 simple.txt
+drwxrwxr-x 5 jenkins jenkins      62 Mar 21 18:36 roles
+-rwxrwxr-x 1 jenkins jenkins      67 Mar 22 07:37 hosts
+drwxrwxr-x 2 jenkins jenkins    4096 Mar 22 08:04 playbooks
+[s3-deploy-tomcat] $ ansible-playbook playbooks/copyartifact.yml -i hosts -l webserver -f 5 --private-key /tmp/ssh2494990885199034209.key -u ansadm
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [172.31.42.239]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Host key verification failed.", "unreachable": true}
+
+PLAY RECAP *********************************************************************
+172.31.42.239              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+
+FATAL: command execution failed
+hudson.AbortException: Ansible playbook execution failed
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:262)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:232)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:78)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1853)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:427)
+ERROR: Ansible playbook execution failed
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

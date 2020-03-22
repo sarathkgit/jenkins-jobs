@@ -1,0 +1,9 @@
+commit 7ab6ad4a97ece82f2266186c083c4cc5fb0512ff
+tree ef811343dc518d9f52a81bc9333d14a52723babe
+parent e7477b7fc6e09e9aa1ded9696277cd3c26b1dc3d
+author sarathkgit <39150187+sarathkgit@users.noreply.github.com> 2020-03-22 13:31:44 +0530
+committer GitHub <noreply@github.com> 2020-03-22 13:31:44 +0530
+
+    adding become method
+
+:100644 100644 930cc9d97ccd8cfd51dcfc58e76d356f044af391 96fe2bd64708a34e3bfb2090b5981644b4efae70 M	playbooks/copyartifact.yml

@@ -1,0 +1,10 @@
+commit 4d5aa489fb92402a860788f5c2783dc8113fa0b4
+tree 2a9ffa25473b6dc9ca8d47b3b1bd4740276a2724
+parent c31479e85a0ad96734553c0397231877db2053dc
+author root <root@ip-172-31-85-255.ec2.internal> 2020-03-18 08:21:02 +0000
+committer root <root@ip-172-31-85-255.ec2.internal> 2020-03-18 08:21:02 +0000
+
+    change contact email id in index.html file
+
+
+:100755 100755 e5fbb221332b95ab04f4dcf7f20beeac047275b1 9cd0ddf15659c86bc63fc3b10410ef875a4461bc M	index.html

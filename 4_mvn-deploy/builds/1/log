@@ -1,0 +1,26 @@
+Started by upstream project "[8mha:////4CgpJh25gBbl8yaFP1NrqiZJEtId5lVyJQDx19IGwW8DAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JH3j+NyyPN2C7HR9AM6aTzTEAAAA[0m3_mvn-pkg" build number [8mha:////4G4DuV0vJpyUhiJeOD1u2/QqHaXPQowtFQbkDQrsimlwAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgH9rPwkfeP43LI83YLsdH1DAIAzPLPFAAAA[0m1
+originally caused by:
+ Started by upstream project "[8mha:////4GMLzTUvOUFc+0nEAdZxRasW2BNVCdhC7OEr3eVsx7yOAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/az8JH2j+NyyPN2S1OISoCH6ADFfXznIAAAA[0m2_mvn-testing" build number [8mha:////4H6yAEyJiBG2w2VnSqdeHpkS/F77PFPlGlyJN5uGg1ZjAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBhH9rPwkfaP43LI83ZLU4hKgIfqGAGuU1wDJAAAA[0m1
+ originally caused by:
+  Started by upstream project "[8mha:////4E/g256IpsYImUFOvb8DWexxHlzZIEvYLG1GhuPW2CBcAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/az8JH3D+NyyPN2k0sycFH0AeiqGksYAAAA=[0m1_mvn-build" build number [8mha:////4Jb2xsXPNNWozCUmMYIEMbmobW1J37EF4GLebO1EZnvOAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQAygGfpZ+Un6hvG5ZXm6SaWZOSn6hgCWmNsHxwAAAA==[0m1
+  originally caused by:
+   Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Mi5nkxhE2VXw8qyjGWNH7VLwqDmNPRrqUyNVyfdx0GdAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eKcxLJUAEnZB8bEAAAA[0mslave (slave-1) in workspace /home/jenkins/workspace/4_mvn-deploy
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[4_mvn-deploy] $ /bin/sh -xe /tmp/jenkins293846063908288822.sh
++ sudo echo '#################### checking java version ###############'
+#################### checking java version ###############
++ sudo java --version
+Unrecognized option: --version
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+Build step 'Execute shell' marked build as failure
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Published SNS notification: subject=Deploying war file into Jenkins topic=arn:aws:sns:us-east-1:840389044523:My-SNS
+Finished: FAILURE

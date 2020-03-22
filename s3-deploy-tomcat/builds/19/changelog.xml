@@ -1,0 +1,9 @@
+commit e7477b7fc6e09e9aa1ded9696277cd3c26b1dc3d
+tree 066c301c8799a50466c7935d3d9e349cda4effad
+parent 3d1b33afc6a006e89404ab4bfb3edbe2b1329f85
+author sarathkgit <39150187+sarathkgit@users.noreply.github.com> 2020-03-22 13:07:27 +0530
+committer GitHub <noreply@github.com> 2020-03-22 13:07:27 +0530
+
+    back to nor
+
+:100755 100755 fe7156db5d8c623a2cd0118f5f11eba22bdf9f7a be9e245d580e602ebd88b3c771360edbc210db2c M	hosts

@@ -1,0 +1,11 @@
+Started on Mar 22, 2020 3:21:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision d8d768f4f542a6a8b1bbb7d77abf0b977f4c9c2f (refs/remotes/origin/master)
+using credential fab16a6d-7a4f-4333-964e-8a4382d5e763
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git ls-remote -h -- https://github.com/sarathkgit/Maven-CounterWebApp.git # timeout=10
+Found 2 remote heads on https://github.com/sarathkgit/Maven-CounterWebApp.git
+[poll] Latest remote head revision on refs/heads/master is: d8d768f4f542a6a8b1bbb7d77abf0b977f4c9c2f - already built by 7
+Done. Took 0.1 sec
+No changes

@@ -1,0 +1,13 @@
+Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/1_build
+[1_build] $ /bin/sh -xe /tmp/jenkins1871622765516188502.sh
++ echo '####### this is maven build job #######'
+####### this is maven build job #######
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Triggering a new build of [8mha:////4EvEc+euIY3z2N+NrDyz5Eq0h7zKO4xeS1yxHlSL8qJGAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+kbxuYllqXm6JanFJfoAZnblGMcAAAA=[0m2_maven-test
+Finished: SUCCESS

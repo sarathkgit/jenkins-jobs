@@ -1,0 +1,28 @@
+Started by user [8mha:////4EQy5FInPDvxagxiJU664q8Fo42rUsVdGK8B9fjdMShOAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/s3-artifact
+Publish artifacts to S3 Bucket Build is still running
+Publish artifacts to S3 Bucket Using S3 profile: s3-artifacts
+ERROR: Failed to upload files
+java.io.IOException: Expecting Ant GLOB pattern, but saw '/usr/share/tomcat/webapps/*'. See http://ant.apache.org/manual/Types/fileset.html for syntax
+	at hudson.FilePath.glob(FilePath.java:1925)
+	at hudson.FilePath.access$3200(FilePath.java:211)
+	at hudson.FilePath$ListGlob.invoke(FilePath.java:1906)
+	at hudson.FilePath$ListGlob.invoke(FilePath.java:1894)
+	at hudson.FilePath.act(FilePath.java:1075)
+	at hudson.FilePath.act(FilePath.java:1058)
+	at hudson.FilePath.list(FilePath.java:1892)
+	at hudson.FilePath.list(FilePath.java:1876)
+	at hudson.plugins.s3.S3BucketPublisher.perform(S3BucketPublisher.java:270)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:78)
+	at hudson.tasks.BuildStepMonitor$2.perform(BuildStepMonitor.java:32)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1878)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:427)
+Build step 'Publish artifacts to S3 Bucket' changed build result to UNSTABLE
+Finished: UNSTABLE

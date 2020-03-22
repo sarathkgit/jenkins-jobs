@@ -1,0 +1,11 @@
+Started on Mar 18, 2020 6:41:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 00b7876cb6ca83e618d722e8061982be4202dd4d (refs/remotes/origin/master)
+using credential fab16a6d-7a4f-4333-964e-8a4382d5e763
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git ls-remote -h -- https://github.com/sarathkgit/staticwebsite.git # timeout=10
+Found 2 remote heads on https://github.com/sarathkgit/staticwebsite.git
+[poll] Latest remote head revision on refs/heads/master is: 24191ba1881fd2b43d0e34325a8f662623960cfa
+Done. Took 0.14 sec
+Changes found

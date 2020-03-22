@@ -1,0 +1,37 @@
+Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/sample
+[sample] $ /bin/sh -xe /tmp/jenkins5739038439930916961.sh
++ echo '####### this is my local job running to view my /var/log/messages #######'
+####### this is my local job running to view my /var/log/messages #######
++ sudo ls -lrta /tmp
+total 13180
+drwxrwxrwt  2 root    root          6 Mar 17 09:43 .XIM-unix
+drwxrwxrwt  2 root    root          6 Mar 17 09:43 .font-unix
+drwxrwxrwt  2 root    root          6 Mar 17 09:43 .X11-unix
+drwxrwxrwt  2 root    root          6 Mar 17 09:43 .Test-unix
+drwxrwxrwt  2 root    root          6 Mar 17 09:43 .ICE-unix
+dr-xr-xr-x 18 root    root        257 Mar 17 09:43 ..
+drwx------  3 root    root         17 Mar 17 09:43 systemd-private-241bf125cf434506aa149e103e186a16-chronyd.service-H3MdqM
+drwxr-xr-x  2 root    root         18 Mar 17 09:44 hsperfdata_root
+-rw-r--r--  1 jenkins jenkins 1505196 Mar 17 09:58 jna374106141076574273jar
+-rw-r--r--  1 jenkins jenkins   19673 Mar 17 09:58 akuma4949028584272886981jar
+-rw-r--r--  1 jenkins jenkins 2390099 Mar 17 09:58 winstone5666566324207893598.jar
+drwxr-xr-x  2 jenkins jenkins       6 Mar 17 09:58 jetty-0.0.0.0-8080-war-_-any-8036949842472107180.dir
+-rw-r--r--  1 jenkins jenkins 2390099 Mar 17 10:57 winstone8941278090373695815.jar
+drwxr-xr-x  2 jenkins jenkins       6 Mar 17 10:57 jetty-0.0.0.0-8080-war-_-any-8796803339070404486.dir
+-rw-r--r--  1 jenkins jenkins 2390099 Mar 17 11:05 winstone715251886104627729.jar
+drwxr-xr-x  2 jenkins jenkins       6 Mar 17 11:05 jetty-0.0.0.0-8080-war-_-any-8882452734535388869.dir
+-rw-r--r--  1 jenkins jenkins 2390099 Mar 17 11:14 winstone2043068753104265218.jar
+drwxr-xr-x  2 jenkins jenkins       6 Mar 17 11:14 jetty-0.0.0.0-8080-war-_-any-964739605686700796.dir
+drwxr-xr-x  2 jenkins jenkins      18 Mar 17 11:26 hsperfdata_jenkins
+-rw-r--r--  1 jenkins jenkins 2390099 Mar 17 11:27 winstone7340493009553800292.jar
+drwxr-xr-x  2 jenkins jenkins       6 Mar 17 11:27 jetty-0.0.0.0-8080-war-_-any-1314183216284147882.dir
+-rw-r--r--  1 jenkins jenkins     100 Mar 17 11:40 jenkins5739038439930916961.sh
+drwxrwxrwt 15 root    root       4096 Mar 17 11:40 .
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

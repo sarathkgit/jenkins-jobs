@@ -1,0 +1,130 @@
+Started by an SCM change
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/static-web-poll-scm
+using credential fab16a6d-7a4f-4333-964e-8a4382d5e763
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sarathkgit/staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/staticwebsite.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/staticwebsite.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 716ec2d991883f563f72ad4143e4780009b2afef (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 716ec2d991883f563f72ad4143e4780009b2afef # timeout=10
+Commit message: "Merge pull request #2 from sarathkgit/dev"
+ > git rev-list --no-walk 24191ba1881fd2b43d0e34325a8f662623960cfa # timeout=10
+[static-web-poll-scm] $ /bin/sh -xe /tmp/jenkins8459532936434279691.sh
++ sudo echo '####### remove httpd server if it is already installed #######'
+####### remove httpd server if it is already installed #######
++ sudo yum remove -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be erased
+--> Processing Dependency: httpd-mmn = 20120211x8664 for package: mod_http2-1.15.3-2.amzn2.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                   Repository         Size
+================================================================================
+Removing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1        @amzn2-core       4.0 M
+Removing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2            @amzn2-core       378 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package (+1 Dependent package)
+
+Installed size: 4.3 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Erasing    : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Removed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Removed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo echo '####### install httpd server ############'
+####### install httpd server ############
++ sudo yum install -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be installed
+--> Processing Dependency: mod_http2 for package: httpd-2.4.41-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                    Repository        Size
+================================================================================
+Installing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1         amzn2-core       1.3 M
+Installing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2             amzn2-core       146 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 1.5 M
+Installed size: 4.3 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              7.0 MB/s | 1.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Installing : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Installed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Installed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo echo '######### start the service #########
+sudo service httpd start
+sudo echo #########' remove all files if exists in document root
+######### start the service #########
+sudo service httpd start
+sudo echo ######### remove all files if exists in document root
++ sudo rm -rf /var/www/html/assets /var/www/html/error /var/www/html/images /var/www/html/index.html /var/www/html/LICENSE.MD /var/www/html/README.MD
++ sudo echo '######## copy files from workspace to document root #########'
+######## copy files from workspace to document root #########
++ sudo cp -r /var/lib/jenkins/workspace/static-web-poll-scm/assets /var/lib/jenkins/workspace/static-web-poll-scm/error /var/lib/jenkins/workspace/static-web-poll-scm/images /var/lib/jenkins/workspace/static-web-poll-scm/index.html /var/lib/jenkins/workspace/static-web-poll-scm/LICENSE.MD /var/lib/jenkins/workspace/static-web-poll-scm/README.MD /var/www/html/
++ sudo echo '######### restart the httpd server #########'
+######### restart the httpd server #########
++ sudo service httpd restart
+Redirecting to /bin/systemctl restart httpd.service
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

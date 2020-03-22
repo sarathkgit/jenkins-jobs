@@ -1,0 +1,137 @@
+Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Mi5nkxhE2VXw8qyjGWNH7VLwqDmNPRrqUyNVyfdx0GdAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eKcxLJUAEnZB8bEAAAA[0mslave (slave-1) in workspace /home/jenkins/workspace/build-param-httpd
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+using credential fab16a6d-7a4f-4333-964e-8a4382d5e763
+Cloning the remote Git repository
+Cloning repository https://github.com/sarathkgit/staticwebsite.git
+ > git init /home/jenkins/workspace/build-param-httpd # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/staticwebsite.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/staticwebsite.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/staticwebsite.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/staticwebsite.git
+using GIT_ASKPASS to set credentials this is github user credentials for authtoken 
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/staticwebsite.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 716ec2d991883f563f72ad4143e4780009b2afef (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 716ec2d991883f563f72ad4143e4780009b2afef # timeout=10
+Commit message: "Merge pull request #2 from sarathkgit/dev"
+First time build. Skipping changelog.
+[build-param-httpd] $ /bin/sh -xe /tmp/jenkins1115798203183839904.sh
++ sudo echo '####### remove httpd server if it is already installed #######'
+####### remove httpd server if it is already installed #######
++ sudo yum remove -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be erased
+--> Processing Dependency: httpd-mmn = 20120211x8664 for package: mod_http2-1.15.3-2.amzn2.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                   Repository         Size
+================================================================================
+Removing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1        @amzn2-core       4.0 M
+Removing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2            @amzn2-core       378 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package (+1 Dependent package)
+
+Installed size: 4.3 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Erasing    : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Removed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Removed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo echo '####### install httpd server ############'
+####### install httpd server ############
++ sudo yum install -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be installed
+--> Processing Dependency: mod_http2 for package: httpd-2.4.41-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                    Repository        Size
+================================================================================
+Installing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1         amzn2-core       1.3 M
+Installing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2             amzn2-core       146 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 1.5 M
+Installed size: 4.3 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              4.2 MB/s | 1.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Installing : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Installed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Installed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo echo '######### start the service #########
+sudo service httpd start
+sudo echo #########' remove all files if exists in document root
+######### start the service #########
+sudo service httpd start
+sudo echo ######### remove all files if exists in document root
++ sudo rm -rf /var/www/html/css /var/www/html/delefile.txt /var/www/html/font /var/www/html/img /var/www/html/index.html /var/www/html/index.html-old /var/www/html/js /var/www/html/owl-carousel /var/www/html/README.md
++ sudo echo '######## copy files from workspace to document root #########'
+######## copy files from workspace to document root #########
++ sudo cp -r '/var/lib/jenkins/workspace/build-param-httpd/*' /var/www/html/
+cp: cannot stat ‘/var/lib/jenkins/workspace/build-param-httpd/*’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: sarath0969@gmail.com
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

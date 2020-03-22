@@ -1,0 +1,33 @@
+Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/shell-deploy-test
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sarathkgit/food2.git
+ > git init /var/lib/jenkins/workspace/shell-deploy-test # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/food2.git
+ > git --version # timeout=10
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/food2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/food2.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/food2.git # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/food2.git
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/food2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision af9c8bb2c211a3605528d7090763f29aa4712548 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f af9c8bb2c211a3605528d7090763f29aa4712548 # timeout=10
+Commit message: "feature9 image commited"
+First time build. Skipping changelog.
+[shell-deploy-test] $ /bin/sh -xe /tmp/jenkins2180736266825389964.sh
++ sudo sh /var/lib/jenkins/staticdeploy.sh
+This is Jenkins master shell
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

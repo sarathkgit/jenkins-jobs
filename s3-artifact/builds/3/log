@@ -1,0 +1,8 @@
+Started by user [8mha:////4EQy5FInPDvxagxiJU664q8Fo42rUsVdGK8B9fjdMShOAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/s3-artifact
+Publish artifacts to S3 Bucket Build is still running
+Publish artifacts to S3 Bucket Using S3 profile: s3-artifacts
+Publish artifacts to S3 Bucket No file(s) found: **/*
+Publish artifacts to S3 Bucket ‘**/*’ doesn’t match anything: ‘**’ exists but not ‘**/*’
+Finished: SUCCESS

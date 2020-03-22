@@ -1,0 +1,136 @@
+Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/staticwebdeploy
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sarathkgit/food2.git
+ > git init /var/lib/jenkins/workspace/staticwebdeploy # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/food2.git
+ > git --version # timeout=10
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/food2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/food2.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sarathkgit/food2.git # timeout=10
+Fetching upstream changes from https://github.com/sarathkgit/food2.git
+ > git fetch --tags --force --progress -- https://github.com/sarathkgit/food2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision af9c8bb2c211a3605528d7090763f29aa4712548 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f af9c8bb2c211a3605528d7090763f29aa4712548 # timeout=10
+Commit message: "feature9 image commited"
+First time build. Skipping changelog.
+[staticwebdeploy] $ /bin/sh -xe /tmp/jenkins6192063475718514333.sh
++ sudo echo '####### removing of httpd server ########'
+####### removing of httpd server ########
++ sudo yum remove -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be erased
+--> Processing Dependency: httpd-mmn = 20120211x8664 for package: mod_http2-1.15.3-2.amzn2.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                   Repository         Size
+================================================================================
+Removing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1        @amzn2-core       4.0 M
+Removing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2            @amzn2-core       378 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package (+1 Dependent package)
+
+Installed size: 4.3 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Erasing    : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Removed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Removed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo echo '####### installation of httpd server ########'
+####### installation of httpd server ########
++ sudo yum install -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be installed
+--> Processing Dependency: mod_http2 for package: httpd-2.4.41-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                    Repository        Size
+================================================================================
+Installing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1         amzn2-core       1.3 M
+Installing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2             amzn2-core       146 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 1.5 M
+Installed size: 4.3 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              9.2 MB/s | 1.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Installing : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Installed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Installed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo echo '####### start service of httpd server ########'
+####### start service of httpd server ########
++ sudo service httpd start
+Redirecting to /bin/systemctl start httpd.service
++ sudo echo '####### document root checking ########'
+####### document root checking ########
++ sudo rm -rf '/var/www/html/*'
++ sudo echo '####### copying git repo files to document root ########'
+####### copying git repo files to document root ########
++ sudo cp -r /var/lib/jenkins/workspace/staticwebdeploy/assets /var/lib/jenkins/workspace/staticwebdeploy/favicon.ico /var/lib/jenkins/workspace/staticwebdeploy/index.html /var/lib/jenkins/workspace/staticwebdeploy/logical.img /var/lib/jenkins/workspace/staticwebdeploy/Readme.txt /var/www/html/
++ sudo echo '####### restarting of httpd server ########'
+####### restarting of httpd server ########
++ sudo service httpd restart
+Redirecting to /bin/systemctl restart httpd.service
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

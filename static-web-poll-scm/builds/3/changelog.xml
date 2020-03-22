@@ -1,0 +1,10 @@
+commit 8ae8a082677fa3160788de9fc1f0e2bb1f9bdeb3
+tree e0b2e4bcab150a997d22f7481be4c98de3e86312
+parent b3c6d8390491454de3fb3cc347a29b8b2f2b2665
+author root <root@ip-172-31-42-239.ec2.internal> 2020-03-18 06:45:57 +0000
+committer root <root@ip-172-31-42-239.ec2.internal> 2020-03-18 06:45:57 +0000
+
+    Changed index.html file from contact to conttact to conrtact-us
+
+
+:100644 100644 a6934932fcb3d313568ca74326204ad8a59515fd fc4a262c71c5af64c8e7ac94d089a5f2c74ad8d5 M	index.html

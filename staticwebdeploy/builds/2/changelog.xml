@@ -1,0 +1,9 @@
+commit e3dbedf36677b16406fb7ece0997ea46ae1ce53a
+tree 286b9cc9c8d408d93d705e7d6c2d22152a652f6f
+parent af9c8bb2c211a3605528d7090763f29aa4712548
+author sarathkgit <39150187+sarathkgit@users.noreply.github.com> 2020-03-17 23:48:23 +0530
+committer GitHub <noreply@github.com> 2020-03-17 23:48:23 +0530
+
+    changing Home navigator to House
+
+:100644 100644 29762245ceded8c86ce272873a9fbb4ff443836e 773d3b78c576743abe912701073e65a38a27cc16 M	index.html

@@ -1,0 +1,11 @@
+Started on Mar 17, 2020 6:18:29 PM
+Started by event from 192.30.252.97 ⇒ http://jenkins.irap.cf/github-webhook/ on Tue Mar 17 18:18:29 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision af9c8bb2c211a3605528d7090763f29aa4712548 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/sarathkgit/food2.git # timeout=10
+Found 2 remote heads on https://github.com/sarathkgit/food2.git
+[poll] Latest remote head revision on refs/heads/master is: e3dbedf36677b16406fb7ece0997ea46ae1ce53a
+Done. Took 89 ms
+Changes found

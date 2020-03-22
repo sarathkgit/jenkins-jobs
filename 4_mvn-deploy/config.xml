@@ -1,0 +1,113 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>copying war file from build pkg to tomcat server</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.13"/>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>20</daysToKeep>
+        <numToKeep>10</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.31">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>WORKSPACE</name>
+          <description>this is a 3 build package to deploy</description>
+          <defaultValue>/home/jenkins/workspace/3_mvn-pkg/gameoflife-web/target/</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <org.jenkinsci.plugins.flow__plugin.FlowProjectProperty plugin="flow@1.3"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>slave</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>JAVA_HOME</jdk>
+  <triggers>
+    <jenkins.triggers.ReverseBuildTrigger>
+      <spec></spec>
+      <upstreamProjects>3_mvn-pkg</upstreamProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </jenkins.triggers.ReverseBuildTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>sudo echo &quot;#################### checking java version ###############&quot;
+sudo java -version
+sudo echo &quot;################ mkaking directory to store the tomcat configurations ##############&quot;
+#sudo mkdir /usr/local/tomcat
+sudo echo &quot;############## creating tomcat user ###############&quot;
+#sudo useradd -d /home/tomcat -m tomcat
+sudo echo &quot;############ changing root to tomcat ownership for tomcat dir ###############&quot;
+sudo chown -R tomcat:tomcat /usr/local/tomcat/
+
+sudo echo &quot;#################### changing dir to /tmp #################&quot;
+sudo cd /tmp
+sudo echo &quot;#################### downloading tomcat 8.5.51 version into /tmp dir ################&quot;
+sudo wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
+sudo echo &quot;################# extracting the tomcat tar file ###################&quot;
+sudo tar -zxvf apache-tomcat-8.5.51.tar.gz
+
+sudo echo &quot;########### present working dir ##############&quot;
+sudo pwd
+
+sudo echo &quot;############## copying /tmp tomcat dir to /usr/local/tomcat ###################&quot;
+sudo cp -r /home/jenkins/workspace/4_mvn-deploy/apache-tomcat-8.5.51/* /usr/local/tomcat/
+sudo echo &quot;########### changing file permission to 755 to tomcat dir ############&quot;
+sudo chmod -R 755 /usr/local/tomcat/
+
+
+sudo echo &quot;########### listing tomcat folders ################&quot;
+sudo ls -rlt /usr/local/tomcat/
+sudo echo &quot;########### shuting down the tomcat server ##############&quot;
+sudo sh /usr/local/tomcat/bin/shutdown.sh
+
+sudo echo &quot;############ Getting war file from the previous build package #########&quot;
+cd ${WORKSPACE}
+sudo echo &quot;######### copying war file into tomcat webapps folder ###########&quot;
+sudo cp -r ${WORKSPACE}/*.war /usr/local/tomcat/webapps/
+sudo echo &quot;########### start the tomcat server #################&quot;
+sudo sh /usr/local/tomcat/bin/startup.sh
+sudo echo &quot;########### checking the process running or not using ps command ############&quot;
+sudo ps -ef| grep tomcat
+sudo echo &quot;############# listing the tomcat webapps folder ################&quot;
+sudo ls -lrt /usr/local/tomcat/webapps/*
+sudo echo &quot;#################### DEPLOYMENT COMPLETED SUCCESSFULLY ###################&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <org.jenkinsci.plugins.snsnotify.AmazonSNSNotifier plugin="snsnotify@1.13">
+      <projectTopicArn>arn:aws:sns:us-east-1:840389044523:My-SNS</projectTopicArn>
+      <subjectTemplate>Deploying war file into Jenkins</subjectTemplate>
+      <messageTemplate></messageTemplate>
+    </org.jenkinsci.plugins.snsnotify.AmazonSNSNotifier>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.38">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+      <disableDeferredWipeout>false</disableDeferredWipeout>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+  </buildWrappers>
+</project>

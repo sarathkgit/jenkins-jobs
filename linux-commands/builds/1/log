@@ -1,0 +1,19 @@
+Started by user [8mha:////4L+iFMg3bEdyJDkF1Ft92vnDeB5SmTdKIqU0roigYhc3AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/linux-commands
+[linux-commands] $ /bin/sh -xe /tmp/jenkins2185819555233705240.sh
++ sudo yum install -y wget curl
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package wget-1.14-18.amzn2.1.x86_64 already installed and latest version
+Package curl-7.61.1-12.amzn2.0.1.x86_64 already installed and latest version
+Nothing to do
++ sudo yum list httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Available Packages
+httpd.x86_64                    2.4.41-1.amzn2.0.1                    amzn2-core
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

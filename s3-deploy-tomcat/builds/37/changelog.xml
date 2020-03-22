@@ -1,0 +1,9 @@
+commit f19712e675f35d4e9097fb2ca6fe407f4c304346
+tree 332ab8febb87799dae278b10577a94f0bb8f68cd
+parent 0aec3b356fcbbc8e317838aca0d9cd880b5d12c5
+author sarathkgit <39150187+sarathkgit@users.noreply.github.com> 2020-03-22 19:39:16 +0530
+committer GitHub <noreply@github.com> 2020-03-22 19:39:16 +0530
+
+    adding remote user ansadm into the file
+
+:100644 100644 721fc76a8164872e58e185bb29a667244f8abc4f 154abe7ce2e17cc953379e61ebd1735425f70fca M	playbooks/copyartifact.yml

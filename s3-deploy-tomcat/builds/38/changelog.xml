@@ -1,0 +1,9 @@
+commit f3d94e9816aa463c73a79f885e2be120d09fb26e
+tree d8946733ec4a995c73ce7ad356d3fb1b0d2da4dd
+parent f19712e675f35d4e9097fb2ca6fe407f4c304346
+author sarathkgit <39150187+sarathkgit@users.noreply.github.com> 2020-03-22 19:44:41 +0530
+committer GitHub <noreply@github.com> 2020-03-22 19:44:41 +0530
+
+    changing file module to copy
+
+:100644 100644 154abe7ce2e17cc953379e61ebd1735425f70fca 17985ebff9999549ff7c5bae05ee6e6f2a787cef M	playbooks/copyartifact.yml

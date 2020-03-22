@@ -1,0 +1,10 @@
+commit 56eb0891ef4ba301bce932a431d566db9616dc80
+tree c662b273e033d75fb1c9346025fea0c0560404a1
+parent 44557acdaf671c028ad1466cbda00b2b346207cb
+author root <root@ip-172-31-85-255.ec2.internal> 2020-03-20 11:58:54 +0000
+committer root <root@ip-172-31-85-255.ec2.internal> 2020-03-20 11:58:54 +0000
+
+    changed in pom.xml just a space
+
+
+:100644 100644 b9116e592f05b609c3570448616f5bf00a22fa6f 326c93a0918e8b287b57e4961b047da82b3c0c42 M	pom.xml

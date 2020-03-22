@@ -1,0 +1,10 @@
+Started on Mar 22, 2020 3:21:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision d8d768f4f542a6a8b1bbb7d77abf0b977f4c9c2f (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/sarathkgit/Maven-CounterWebApp.git # timeout=10
+Found 2 remote heads on https://github.com/sarathkgit/Maven-CounterWebApp.git
+[poll] Latest remote head revision on refs/heads/master is: d8d768f4f542a6a8b1bbb7d77abf0b977f4c9c2f - already built by 2
+Done. Took 0.1 sec
+No changes
